@@ -12,29 +12,22 @@ reg = load("model")
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
-def predict():
+# @app.route('/predict',methods=['POST'])
+# def predict():
 
-    int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = reg.predict(final_features)
+#     int_features = [int(x) for x in request.form.values()]
+#     final_features = [np.array(int_features)]
+#     prediction = reg.predict(final_features)
 
-    output = round(prediction[0], 2)
+#     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='Turnaround time should be {} days'.format(output))
+#     return render_template('index.html', prediction_text='Turnaround time should be {} days'.format(output))
 
-
-
-
-
-
-
-
-
-
-
-
-
+@app.route('/test')
+def test():
+    request.args.get("param1")
+    print(request.args)
+    return request.args
 
 
 if __name__ == "__main__":

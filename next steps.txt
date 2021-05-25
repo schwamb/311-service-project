@@ -1,0 +1,5 @@
+in javascript get the values from the inputs
+
+send a get request with the values as d3.json url
+
+change the display of the page based on what we get back
