@@ -1,92 +1,92 @@
-,SR_TYPE,,,HTML
-501,Abandoned Vehicle Complaint,,,<option value='Abandoned Vehicle Complaint'>Abandoned Vehicle Complaint</option>
-359,Alley Light Out Complaint,,,<option value='Alley Light Out Complaint'>Alley Light Out Complaint</option>
-361,Alley Pothole Complaint,,,<option value='Alley Pothole Complaint'>Alley Pothole Complaint</option>
-1716,Alley Sewer Inspection Request,,,<option value='Alley Sewer Inspection Request'>Alley Sewer Inspection Request</option>
-6755,Animal In Trap Complaint,,,<option value='Animal In Trap Complaint'>Animal In Trap Complaint</option>
-2012,Bee/Wasp Removal,,,<option value='Bee/Wasp Removal'>Bee/Wasp Removal</option>
-40485,Bicycle Request/Complaint,,,<option value='Bicycle Request/Complaint'>Bicycle Request/Complaint</option>
-466,Building Violation,,,<option value='Building Violation'>Building Violation</option>
-7295,Bungalow/Vintage Home Information Request,,,<option value='Bungalow/Vintage Home Information Request'>Bungalow/Vintage Home Information Request</option>
-674,Business Complaints / Reopening Issue,,,<option value='Business Complaints / Reopening Issue'>Business Complaints / Reopening Issue</option>
-74,Cab Feedback,,,<option value='Cab Feedback'>Cab Feedback</option>
-10023,Cable TV Complaint,,,<option value='Cable TV Complaint'>Cable TV Complaint</option>
-24,City Vehicle Sticker Violation,,,<option value='City Vehicle Sticker Violation'>City Vehicle Sticker Violation</option>
-48799,Clean and Green Program Request,,,<option value='Clean and Green Program Request'>Clean and Green Program Request</option>
-1541,Clean Vacant Lot Request,,,<option value='Clean Vacant Lot Request'>Clean Vacant Lot Request</option>
-45989,Commercial Fire Safety Inspection Request,,,<option value='Commercial Fire Safety Inspection Request'>Commercial Fire Safety Inspection Request</option>
-1244,Consumer Fraud Complaint,,,<option value='Consumer Fraud Complaint'>Consumer Fraud Complaint</option>
-2279,Consumer Retail Store Complaint,,,<option value='Consumer Retail Store Complaint'>Consumer Retail Store Complaint</option>
-2613,Coyote Interaction Complaint,,,<option value='Coyote Interaction Complaint'>Coyote Interaction Complaint</option>
-5,Dead Animal Pick-Up Request,,,<option value='Dead Animal Pick-Up Request'>Dead Animal Pick-Up Request</option>
-2417,Dead Bird,,,<option value='Dead Bird'>Dead Bird</option>
-68,Fly Dumping Complaint,,,<option value='Fly Dumping Complaint'>Fly Dumping Complaint</option>
-185,Garbage Cart Maintenance,,,<option value='Garbage Cart Maintenance'>Garbage Cart Maintenance</option>
-0,Graffiti Removal Request,,,<option value='Graffiti Removal Request'>Graffiti Removal Request</option>
-1514,Home Buyer Program Info Request,,,<option value='Home Buyer Program Info Request'>Home Buyer Program Info Request</option>
-9903,Ice and Snow Removal Request,,,<option value='Ice and Snow Removal Request'>Ice and Snow Removal Request</option>
-2139,Inaccurate Fuel Pump Complaint,,,<option value='Inaccurate Fuel Pump Complaint'>Inaccurate Fuel Pump Complaint</option>
-392135,Inaccurate Retail Scales Complaint,,,<option value='Inaccurate Retail Scales Complaint'>Inaccurate Retail Scales Complaint</option>
-35651,Lead Inspection Request,,,<option value='Lead Inspection Request'>Lead Inspection Request</option>
-1693566,Licensed Pharmaceutical Representative Complaint,,,<option value='Licensed Pharmaceutical Representative Complaint'>Licensed Pharmaceutical Representative Complaint</option>
-1422,Liquor Establishment Complaint,,,<option value='Liquor Establishment Complaint'>Liquor Establishment Complaint</option>
-1861,Low Water Pressure Complaint,,,<option value='Low Water Pressure Complaint'>Low Water Pressure Complaint</option>
-1260,Missed Garbage Pick-Up Complaint,,,<option value='Missed Garbage Pick-Up Complaint'>Missed Garbage Pick-Up Complaint</option>
-94,No Building Permit and Construction Violation,,,<option value='No Building Permit and Construction Violation'>No Building Permit and Construction Violation</option>
-51587,No Solicitation Complaint,,,<option value='No Solicitation Complaint'>No Solicitation Complaint</option>
-1512,No Water Complaint,,,<option value='No Water Complaint'>No Water Complaint</option>
-100,Nuisance Animal Complaint,,,<option value='Nuisance Animal Complaint'>Nuisance Animal Complaint</option>
-987,Open Fire Hydrant Complaint,,,<option value='Open Fire Hydrant Complaint'>Open Fire Hydrant Complaint</option>
-17297,Outdated Merchandise Complaint,,,<option value='Outdated Merchandise Complaint'>Outdated Merchandise Complaint</option>
-267,Paid Sick Leave Violation,,,<option value='Paid Sick Leave Violation'>Paid Sick Leave Violation</option>
-51669,Pavement Cave-In Inspection Request,,,<option value='Pavement Cave-In Inspection Request'>Pavement Cave-In Inspection Request</option>
-1025,Pet Wellness Check Request,,,<option value='Pet Wellness Check Request'>Pet Wellness Check Request</option>
-1633550,Petcoke Dust Complaint,,,<option value='Petcoke Dust Complaint'>Petcoke Dust Complaint</option>
-910,Porch Inspection Request,,,<option value='Porch Inspection Request'>Porch Inspection Request</option>
-60,Pothole in Street Complaint,,,<option value='Pothole in Street Complaint'>Pothole in Street Complaint</option>
-47168,Protected Bike Lane - Debris Removal,,,<option value='Protected Bike Lane - Debris Removal'>Protected Bike Lane - Debris Removal</option>
-180,Public Vehicle/Valet Complaint,,,<option value='Public Vehicle/Valet Complaint'>Public Vehicle/Valet Complaint</option>
-9145,Pushcart Food Vendor Complaint,,,<option value='Pushcart Food Vendor Complaint'>Pushcart Food Vendor Complaint</option>
-2214,Recycling Inspection Request,,,<option value='Recycling Inspection Request'>Recycling Inspection Request</option>
-45390,Renters and Foreclosure Complaint,,,<option value='Renters and Foreclosure Complaint'>Renters and Foreclosure Complaint</option>
-263,Report an Injured Animal,,,<option value='Report an Injured Animal'>Report an Injured Animal</option>
-142,Restaurant Complaint,,,<option value='Restaurant Complaint'>Restaurant Complaint</option>
-35715,Ridesharing Complaint,,,<option value='Ridesharing Complaint'>Ridesharing Complaint</option>
-70,Rodent Baiting/Rat Complaint,,,<option value='Rodent Baiting/Rat Complaint'>Rodent Baiting/Rat Complaint</option>
-92,Sanitation Code Violation,,,<option value='Sanitation Code Violation'>Sanitation Code Violation</option>
-503,Sewer Cave-In Inspection Request,,,<option value='Sewer Cave-In Inspection Request'>Sewer Cave-In Inspection Request</option>
-4,Sewer Cleaning Inspection Request,,,<option value='Sewer Cleaning Inspection Request'>Sewer Cleaning Inspection Request</option>
-9564,Shared Housing/Vacation Rental Complaint,,,<option value='Shared Housing/Vacation Rental Complaint'>Shared Housing/Vacation Rental Complaint</option>
-20829,Sidewalk Cafe Complaint,,,<option value='Sidewalk Cafe Complaint'>Sidewalk Cafe Complaint</option>
-2751,Sidewalk Inspection Request,,,<option value='Sidewalk Inspection Request'>Sidewalk Inspection Request</option>
-154,Sign Repair Request - All Other Signs,,,<option value='Sign Repair Request - All Other Signs'>Sign Repair Request - All Other Signs</option>
-1598,Sign Repair Request - Do Not Enter Sign,,,<option value='Sign Repair Request - Do Not Enter Sign'>Sign Repair Request - Do Not Enter Sign</option>
-6035,Sign Repair Request - One Way Sign,,,<option value='Sign Repair Request - One Way Sign'>Sign Repair Request - One Way Sign</option>
-532,Sign Repair Request - Stop Sign,,,<option value='Sign Repair Request - Stop Sign'>Sign Repair Request - Stop Sign</option>
-221660,Smokeless Tobacco at Sports Event Complaint,,,<option value='Smokeless Tobacco at Sports Event Complaint'>Smokeless Tobacco at Sports Event Complaint</option>
-9775,Snow - Object/Dibs Removal Request,,,<option value='Snow - Object/Dibs Removal Request'>Snow - Object/Dibs Removal Request</option>
-9424,Snow – Uncleared Sidewalk Complaint,,,<option value='Snow – Uncleared Sidewalk Complaint'>Snow – Uncleared Sidewalk Complaint</option>
-150055,Snow Removal - Protected Bike Lane or Bridge Sidewalk,,,<option value='Snow Removal - Protected Bike Lane or Bridge Sidewalk'>Snow Removal - Protected Bike Lane or Bridge Sidewalk</option>
-203,Stray Animal Complaint,,,<option value='Stray Animal Complaint'>Stray Animal Complaint</option>
-890,Street Cleaning Request,,,<option value='Street Cleaning Request'>Street Cleaning Request</option>
-3222,Street Light On During Day Complaint,,,<option value='Street Light On During Day Complaint'>Street Light On During Day Complaint</option>
-25,Street Light Out Complaint,,,<option value='Street Light Out Complaint'>Street Light Out Complaint</option>
-732,Street Light Pole Damage Complaint,,,<option value='Street Light Pole Damage Complaint'>Street Light Pole Damage Complaint</option>
-15816,Street Light Pole Door Missing Complaint,,,<option value='Street Light Pole Door Missing Complaint'>Street Light Pole Door Missing Complaint</option>
-14065,Tobacco - General Complaint,,,<option value='Tobacco - General Complaint'>Tobacco - General Complaint</option>
-15419,Tobacco - Sale to Minors Complaint,,,<option value='Tobacco - Sale to Minors Complaint'>Tobacco - Sale to Minors Complaint</option>
-233,Traffic Signal Out Complaint,,,<option value='Traffic Signal Out Complaint'>Traffic Signal Out Complaint</option>
-67,Tree Debris Clean-Up Request,,,<option value='Tree Debris Clean-Up Request'>Tree Debris Clean-Up Request</option>
-50,Tree Planting Request,,,<option value='Tree Planting Request'>Tree Planting Request</option>
-7,Tree Removal Request,,,<option value='Tree Removal Request'>Tree Removal Request</option>
-8,Tree Trim Request,,,<option value='Tree Trim Request'>Tree Trim Request</option>
-927,Vacant/Abandoned Building Complaint,,,<option value='Vacant/Abandoned Building Complaint'>Vacant/Abandoned Building Complaint</option>
-215,Viaduct Light Out Complaint,,,<option value='Viaduct Light Out Complaint'>Viaduct Light Out Complaint</option>
-338,Vicious Animal Complaint,,,<option value='Vicious Animal Complaint'>Vicious Animal Complaint</option>
-70670,Wage Complaint,,,<option value='Wage Complaint'>Wage Complaint</option>
-23,Water in Basement Complaint,,,<option value='Water in Basement Complaint'>Water in Basement Complaint</option>
-69,Water On Street Complaint,,,<option value='Water On Street Complaint'>Water On Street Complaint</option>
-1220,Water Quality Concern,,,<option value='Water Quality Concern'>Water Quality Concern</option>
-41,Weed Removal Request,,,<option value='Weed Removal Request'>Weed Removal Request</option>
-7118,Wire Basket Request,,,<option value='Wire Basket Request'>Wire Basket Request</option>
-511,Yard Waste Pick-Up Request,,,<option value='Yard Waste Pick-Up Request'>Yard Waste Pick-Up Request</option>
+,SR_TYPE
+0,Graffiti Removal Request
+4,Sewer Cleaning Inspection Request
+5,Dead Animal Pick-Up Request
+7,Tree Removal Request
+8,Tree Trim Request
+21,Street Light Out Complaint
+23,Water in Basement Complaint
+24,City Vehicle Sticker Violation
+41,Weed Removal Request
+50,Tree Planting Request
+60,Pothole in Street Complaint
+67,Tree Debris Clean-Up Request
+68,Fly Dumping Complaint
+69,Water On Street Complaint
+70,Rodent Baiting/Rat Complaint
+74,Cab Feedback
+92,Sanitation Code Violation
+94,No Building Permit and Construction Violation
+100,Nuisance Animal Complaint
+142,Restaurant Complaint
+154,Sign Repair Request - All Other Signs
+180,Public Vehicle/Valet Complaint
+185,Garbage Cart Maintenance
+203,Stray Animal Complaint
+215,Viaduct Light Out Complaint
+233,Traffic Signal Out Complaint
+263,Report an Injured Animal
+267,Paid Sick Leave Violation
+338,Vicious Animal Complaint
+359,Alley Light Out Complaint
+361,Alley Pothole Complaint
+466,Building Violation
+501,Abandoned Vehicle Complaint
+503,Sewer Cave-In Inspection Request
+511,Yard Waste Pick-Up Request
+532,Sign Repair Request - Stop Sign
+674,Business Complaints / Reopening Issue
+732,Street Light Pole Damage Complaint
+890,Street Cleaning Request
+910,Porch Inspection Request
+927,Vacant/Abandoned Building Complaint
+987,Open Fire Hydrant Complaint
+1025,Pet Wellness Check Request
+1220,Water Quality Concern
+1244,Consumer Fraud Complaint
+1260,Missed Garbage Pick-Up Complaint
+1422,Liquor Establishment Complaint
+1512,No Water Complaint
+1514,Home Buyer Program Info Request
+1541,Clean Vacant Lot Request
+1598,Sign Repair Request - Do Not Enter Sign
+1716,Alley Sewer Inspection Request
+1861,Low Water Pressure Complaint
+2012,Bee/Wasp Removal
+2139,Inaccurate Fuel Pump Complaint
+2149,Wire Basket Request
+2214,Recycling Inspection Request
+2279,Consumer Retail Store Complaint
+2417,Dead Bird
+2613,Coyote Interaction Complaint
+2751,Sidewalk Inspection Request
+3222,Street Light On During Day Complaint
+6035,Sign Repair Request - One Way Sign
+6755,Animal In Trap Complaint
+7295,Bungalow/Vintage Home Information Request
+9145,Pushcart Food Vendor Complaint
+9424,Snow – Uncleared Sidewalk Complaint
+9564,Shared Housing/Vacation Rental Complaint
+9728,Ridesharing Complaint
+9775,Snow - Object/Dibs Removal Request
+9903,Ice and Snow Removal Request
+10023,Cable TV Complaint
+12198,Bicycle Request/Complaint
+14065,Tobacco - General Complaint
+15419,Tobacco - Sale to Minors Complaint
+15816,Street Light Pole Door Missing Complaint
+17297,Outdated Merchandise Complaint
+20829,Sidewalk Cafe Complaint
+35651,Lead Inspection Request
+45390,Renters and Foreclosure Complaint
+45989,Commercial Fire Safety Inspection Request
+47168,Protected Bike Lane - Debris Removal
+48799,Clean and Green Program Request
+51587,No Solicitation Complaint
+51669,Pavement Cave-In Inspection Request
+70670,Wage Complaint
+150055,Snow Removal - Protected Bike Lane or Bridge Sidewalk
+221660,Smokeless Tobacco at Sports Event Complaint
+392135,Inaccurate Retail Scales Complaint
+1006124,Licensed Pharmaceutical Representative Complaint
+1633550,Petcoke Dust Complaint

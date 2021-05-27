@@ -11,11 +11,8 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css" media="screen">
-        <title></title>
 
-        <script src="https://d3js.org/d3.v4.js"></script>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
-        <script src="logic.js"></script>
+
 
 
     </head>
@@ -23,127 +20,105 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html" id="logo"> 311 Service Requests- Chicago, IL</a>
-
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
-            <!-- justify-content-end to aligh the navbar items to the right -->
-            <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Visualizations
-                        </a>
-                    </li> -->
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="comparison.html">Comparison</span></a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" <a href="https://worldhappiness.report" target="_blank">Happiness Report</a></a>
-                    </li> -->
-                </ul>
-
-            </div>
         </nav>
-        
-        <select id="selDataset">
-            <option value='Abandoned Vehicle Complaint'>Abandoned Vehicle Complaint</option>
-            <option value='Alley Light Out Complaint'>Alley Light Out Complaint</option>
-            <option value='Alley Pothole Complaint'>Alley Pothole Complaint</option>
-            <option value='Alley Sewer Inspection Request'>Alley Sewer Inspection Request</option>
-            <option value='Animal In Trap Complaint'>Animal In Trap Complaint</option>
-            <option value='Bee/Wasp Removal'>Bee/Wasp Removal</option>
-            <option value='Bicycle Request/Complaint'>Bicycle Request/Complaint</option>
-            <option value='Building Violation'>Building Violation</option>
-            <option value='Bungalow/Vintage Home Information Request'>Bungalow/Vintage Home Information Request</option>
-            <option value='Business Complaints / Reopening Issue'>Business Complaints / Reopening Issue</option>
-            <option value='Cab Feedback'>Cab Feedback</option>
-            <option value='Cable TV Complaint'>Cable TV Complaint</option>
-            <option value='City Vehicle Sticker Violation'>City Vehicle Sticker Violation</option>
-            <option value='Clean and Green Program Request'>Clean and Green Program Request</option>
-            <option value='Clean Vacant Lot Request'>Clean Vacant Lot Request</option>
-            <option value='Commercial Fire Safety Inspection Request'>Commercial Fire Safety Inspection Request</option>
-            <option value='Consumer Fraud Complaint'>Consumer Fraud Complaint</option>
-            <option value='Consumer Retail Store Complaint'>Consumer Retail Store Complaint</option>
-            <option value='Coyote Interaction Complaint'>Coyote Interaction Complaint</option>
-            <option value='Dead Animal Pick-Up Request'>Dead Animal Pick-Up Request</option>
-            <option value='Dead Bird'>Dead Bird</option>
-            <option value='Fly Dumping Complaint'>Fly Dumping Complaint</option>
-            <option value='Garbage Cart Maintenance'>Garbage Cart Maintenance</option>
-            <option value='Graffiti Removal Request'>Graffiti Removal Request</option>
-            <option value='Home Buyer Program Info Request'>Home Buyer Program Info Request</option>
-            <option value='Ice and Snow Removal Request'>Ice and Snow Removal Request</option>
-            <option value='Inaccurate Fuel Pump Complaint'>Inaccurate Fuel Pump Complaint</option>
-            <option value='Inaccurate Retail Scales Complaint'>Inaccurate Retail Scales Complaint</option>
-            <option value='Lead Inspection Request'>Lead Inspection Request</option>
-            <option value='Licensed Pharmaceutical Representative Complaint'>Licensed Pharmaceutical Representative Complaint</option>
-            <option value='Liquor Establishment Complaint'>Liquor Establishment Complaint</option>
-            <option value='Low Water Pressure Complaint'>Low Water Pressure Complaint</option>
-            <option value='Missed Garbage Pick-Up Complaint'>Missed Garbage Pick-Up Complaint</option>
-            <option value='No Building Permit and Construction Violation'>No Building Permit and Construction Violation</option>
-            <option value='No Solicitation Complaint'>No Solicitation Complaint</option>
-            <option value='No Water Complaint'>No Water Complaint</option>
-            <option value='Nuisance Animal Complaint'>Nuisance Animal Complaint</option>
-            <option value='Open Fire Hydrant Complaint'>Open Fire Hydrant Complaint</option>
-            <option value='Outdated Merchandise Complaint'>Outdated Merchandise Complaint</option>
-            <option value='Paid Sick Leave Violation'>Paid Sick Leave Violation</option>
-            <option value='Pavement Cave-In Inspection Request'>Pavement Cave-In Inspection Request</option>
-            <option value='Pet Wellness Check Request'>Pet Wellness Check Request</option>
-            <option value='Petcoke Dust Complaint'>Petcoke Dust Complaint</option>
-            <option value='Porch Inspection Request'>Porch Inspection Request</option>
-            <option value='Pothole in Street Complaint'>Pothole in Street Complaint</option>
-            <option value='Protected Bike Lane - Debris Removal'>Protected Bike Lane - Debris Removal</option>
-            <option value='Public Vehicle/Valet Complaint'>Public Vehicle/Valet Complaint</option>
-            <option value='Pushcart Food Vendor Complaint'>Pushcart Food Vendor Complaint</option>
-            <option value='Recycling Inspection Request'>Recycling Inspection Request</option>
-            <option value='Renters and Foreclosure Complaint'>Renters and Foreclosure Complaint</option>
-            <option value='Report an Injured Animal'>Report an Injured Animal</option>
-            <option value='Restaurant Complaint'>Restaurant Complaint</option>
-            <option value='Ridesharing Complaint'>Ridesharing Complaint</option>
-            <option value='Rodent Baiting/Rat Complaint'>Rodent Baiting/Rat Complaint</option>
-            <option value='Sanitation Code Violation'>Sanitation Code Violation</option>
-            <option value='Sewer Cave-In Inspection Request'>Sewer Cave-In Inspection Request</option>
-            <option value='Sewer Cleaning Inspection Request'>Sewer Cleaning Inspection Request</option>
-            <option value='Shared Housing/Vacation Rental Complaint'>Shared Housing/Vacation Rental Complaint</option>
-            <option value='Sidewalk Cafe Complaint'>Sidewalk Cafe Complaint</option>
-            <option value='Sidewalk Inspection Request'>Sidewalk Inspection Request</option>
-            <option value='Sign Repair Request - All Other Signs'>Sign Repair Request - All Other Signs</option>
-            <option value='Sign Repair Request - Do Not Enter Sign'>Sign Repair Request - Do Not Enter Sign</option>
-            <option value='Sign Repair Request - One Way Sign'>Sign Repair Request - One Way Sign</option>
-            <option value='Sign Repair Request - Stop Sign'>Sign Repair Request - Stop Sign</option>
-            <option value='Smokeless Tobacco at Sports Event Complaint'>Smokeless Tobacco at Sports Event Complaint</option>
-            <option value='Snow - Object/Dibs Removal Request'>Snow - Object/Dibs Removal Request</option>
-            <option value='Snow â€“ Uncleared Sidewalk Complaint'>Snow â€“ Uncleared Sidewalk Complaint</option>
-            <option value='Snow Removal - Protected Bike Lane or Bridge Sidewalk'>Snow Removal - Protected Bike Lane or Bridge Sidewalk</option>
-            <option value='Stray Animal Complaint'>Stray Animal Complaint</option>
-            <option value='Street Cleaning Request'>Street Cleaning Request</option>
-            <option value='Street Light On During Day Complaint'>Street Light On During Day Complaint</option>
-            <option value='Street Light Out Complaint'>Street Light Out Complaint</option>
-            <option value='Street Light Pole Damage Complaint'>Street Light Pole Damage Complaint</option>
-            <option value='Street Light Pole Door Missing Complaint'>Street Light Pole Door Missing Complaint</option>
-            <option value='Tobacco - General Complaint'>Tobacco - General Complaint</option>
-            <option value='Tobacco - Sale to Minors Complaint'>Tobacco - Sale to Minors Complaint</option>
-            <option value='Traffic Signal Out Complaint'>Traffic Signal Out Complaint</option>
-            <option value='Tree Debris Clean-Up Request'>Tree Debris Clean-Up Request</option>
-            <option value='Tree Planting Request'>Tree Planting Request</option>
-            <option value='Tree Removal Request'>Tree Removal Request</option>
-            <option value='Tree Trim Request'>Tree Trim Request</option>
-            <option value='Vacant/Abandoned Building Complaint'>Vacant/Abandoned Building Complaint</option>
-            <option value='Viaduct Light Out Complaint'>Viaduct Light Out Complaint</option>
-            <option value='Vicious Animal Complaint'>Vicious Animal Complaint</option>
-            <option value='Wage Complaint'>Wage Complaint</option>
-            <option value='Water in Basement Complaint'>Water in Basement Complaint</option>
-            <option value='Water On Street Complaint'>Water On Street Complaint</option>
-            <option value='Water Quality Concern'>Water Quality Concern</option>
-            <option value='Weed Removal Request'>Weed Removal Request</option>
-            <option value='Wire Basket Request'>Wire Basket Request</option>
-            <option value='Yard Waste Pick-Up Request'>Yard Waste Pick-Up Request</option>
-            
-          </select>
-          <select id="selDataset">
+
+
+<select id="selectSR">
+    <option value="Abandoned Vehicle Complaint">Abandoned Vehicle Complaint</option>
+    <option value='Alley Light Out Complaint'>Alley Light Out Complaint</option>
+    <option value='Alley Pothole Complaint'>Alley Pothole Complaint</option>
+    <option value='Alley Sewer Inspection Request'>Alley Sewer Inspection Request</option>
+    <option value='Animal In Trap Complaint'>Animal In Trap Complaint</option>
+    <option value='Bee/Wasp Removal'>Bee/Wasp Removal</option>
+    <option value='Bicycle Request/Complaint'>Bicycle Request/Complaint</option>
+    <option value='Building Violation'>Building Violation</option>
+    <option value='Bungalow/Vintage Home Information Request'>Bungalow/Vintage Home Information Request</option>
+    <option value='Business Complaints / Reopening Issue'>Business Complaints / Reopening Issue</option>
+    <option value='Cab Feedback'>Cab Feedback</option>
+    <option value='Cable TV Complaint'>Cable TV Complaint</option>
+    <option value='City Vehicle Sticker Violation'>City Vehicle Sticker Violation</option>
+    <option value='Clean and Green Program Request'>Clean and Green Program Request</option>
+    <option value='Clean Vacant Lot Request'>Clean Vacant Lot Request</option>
+    <option value='Commercial Fire Safety Inspection Request'>Commercial Fire Safety Inspection Request</option>
+    <option value='Consumer Fraud Complaint'>Consumer Fraud Complaint</option>
+    <option value='Consumer Retail Store Complaint'>Consumer Retail Store Complaint</option>
+    <option value='Coyote Interaction Complaint'>Coyote Interaction Complaint</option>
+    <option value='Dead Animal Pick-Up Request'>Dead Animal Pick-Up Request</option>
+    <option value='Dead Bird'>Dead Bird</option>
+    <option value='Fly Dumping Complaint'>Fly Dumping Complaint</option>
+    <option value='Garbage Cart Maintenance'>Garbage Cart Maintenance</option>
+    <option value='Graffiti Removal Request'>Graffiti Removal Request</option>
+    <option value='Home Buyer Program Info Request'>Home Buyer Program Info Request</option>
+    <option value='Ice and Snow Removal Request'>Ice and Snow Removal Request</option>
+    <option value='Inaccurate Fuel Pump Complaint'>Inaccurate Fuel Pump Complaint</option>
+    <option value='Inaccurate Retail Scales Complaint'>Inaccurate Retail Scales Complaint</option>
+    <option value='Lead Inspection Request'>Lead Inspection Request</option>
+    <option value='Licensed Pharmaceutical Representative Complaint'>Licensed Pharmaceutical Representative Complaint</option>
+    <option value='Liquor Establishment Complaint'>Liquor Establishment Complaint</option>
+    <option value='Low Water Pressure Complaint'>Low Water Pressure Complaint</option>
+    <option value='Missed Garbage Pick-Up Complaint'>Missed Garbage Pick-Up Complaint</option>
+    <option value='No Building Permit and Construction Violation'>No Building Permit and Construction Violation</option>
+    <option value='No Solicitation Complaint'>No Solicitation Complaint</option>
+    <option value='No Water Complaint'>No Water Complaint</option>
+    <option value='Nuisance Animal Complaint'>Nuisance Animal Complaint</option>
+    <option value='Open Fire Hydrant Complaint'>Open Fire Hydrant Complaint</option>
+    <option value='Outdated Merchandise Complaint'>Outdated Merchandise Complaint</option>
+    <option value='Paid Sick Leave Violation'>Paid Sick Leave Violation</option>
+    <option value='Pavement Cave-In Inspection Request'>Pavement Cave-In Inspection Request</option>
+    <option value='Pet Wellness Check Request'>Pet Wellness Check Request</option>
+    <option value='Petcoke Dust Complaint'>Petcoke Dust Complaint</option>
+    <option value='Porch Inspection Request'>Porch Inspection Request</option>
+    <option value='Pothole in Street Complaint'>Pothole in Street Complaint</option>
+    <option value='Protected Bike Lane - Debris Removal'>Protected Bike Lane - Debris Removal</option>
+    <option value='Public Vehicle/Valet Complaint'>Public Vehicle/Valet Complaint</option>
+    <option value='Pushcart Food Vendor Complaint'>Pushcart Food Vendor Complaint</option>
+    <option value='Recycling Inspection Request'>Recycling Inspection Request</option>
+    <option value='Renters and Foreclosure Complaint'>Renters and Foreclosure Complaint</option>
+    <option value='Report an Injured Animal'>Report an Injured Animal</option>
+    <option value='Restaurant Complaint'>Restaurant Complaint</option>
+    <option value='Ridesharing Complaint'>Ridesharing Complaint</option>
+    <option value='Rodent Baiting/Rat Complaint'>Rodent Baiting/Rat Complaint</option>
+    <option value='Sanitation Code Violation'>Sanitation Code Violation</option>
+    <option value='Sewer Cave-In Inspection Request'>Sewer Cave-In Inspection Request</option>
+    <option value='Sewer Cleaning Inspection Request'>Sewer Cleaning Inspection Request</option>
+    <option value='Shared Housing/Vacation Rental Complaint'>Shared Housing/Vacation Rental Complaint</option>
+    <option value='Sidewalk Cafe Complaint'>Sidewalk Cafe Complaint</option>
+    <option value='Sidewalk Inspection Request'>Sidewalk Inspection Request</option>
+    <option value='Sign Repair Request - All Other Signs'>Sign Repair Request - All Other Signs</option>
+    <option value='Sign Repair Request - Do Not Enter Sign'>Sign Repair Request - Do Not Enter Sign</option>
+    <option value='Sign Repair Request - One Way Sign'>Sign Repair Request - One Way Sign</option>
+    <option value='Sign Repair Request - Stop Sign'>Sign Repair Request - Stop Sign</option>
+    <option value='Smokeless Tobacco at Sports Event Complaint'>Smokeless Tobacco at Sports Event Complaint</option>
+    <option value='Snow - Object/Dibs Removal Request'>Snow - Object/Dibs Removal Request</option>
+    <option value='Snow â€“ Uncleared Sidewalk Complaint'>Snow â€“ Uncleared Sidewalk Complaint</option>
+    <option value='Snow Removal - Protected Bike Lane or Bridge Sidewalk'>Snow Removal - Protected Bike Lane or Bridge Sidewalk</option>
+    <option value='Stray Animal Complaint'>Stray Animal Complaint</option>
+    <option value='Street Cleaning Request'>Street Cleaning Request</option>
+    <option value='Street Light On During Day Complaint'>Street Light On During Day Complaint</option>
+    <option value='Street Light Out Complaint'>Street Light Out Complaint</option>
+    <option value='Street Light Pole Damage Complaint'>Street Light Pole Damage Complaint</option>
+    <option value='Street Light Pole Door Missing Complaint'>Street Light Pole Door Missing Complaint</option>
+    <option value='Tobacco - General Complaint'>Tobacco - General Complaint</option>
+    <option value='Tobacco - Sale to Minors Complaint'>Tobacco - Sale to Minors Complaint</option>
+    <option value='Traffic Signal Out Complaint'>Traffic Signal Out Complaint</option>
+    <option value='Tree Debris Clean-Up Request'>Tree Debris Clean-Up Request</option>
+    <option value='Tree Planting Request'>Tree Planting Request</option>
+    <option value='Tree Removal Request'>Tree Removal Request</option>
+    <option value='Tree Trim Request'>Tree Trim Request</option>
+    <option value='Vacant/Abandoned Building Complaint'>Vacant/Abandoned Building Complaint</option>
+    <option value='Viaduct Light Out Complaint'>Viaduct Light Out Complaint</option>
+    <option value='Vicious Animal Complaint'>Vicious Animal Complaint</option>
+    <option value='Wage Complaint'>Wage Complaint</option>
+    <option value='Water in Basement Complaint'>Water in Basement Complaint</option>
+    <option value='Water On Street Complaint'>Water On Street Complaint</option>
+    <option value='Water Quality Concern'>Water Quality Concern</option>
+    <option value='Weed Removal Request'>Weed Removal Request</option>
+    <option value='Wire Basket Request'>Wire Basket Request</option>
+    <option value='Yard Waste Pick-Up Request'>Yard Waste Pick-Up Request</option>
+    
+  </select>
+<!-- <p id="selected-dropdown"></p> -->
+          <select id="selectWard">
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>
@@ -194,13 +169,15 @@
             <option value='48'>48</option>
             <option value='49'>49</option>
             <option value='50'>50</option>
-         </select>     
+         </select>
+  
+    
          <label for="meeting-time">Time of Request</label>
             <input type="datetime-local" id="meeting-time"
                 name="meeting-time" value="2018-06-12T19:30">
-        <p></p>
 
-
+                <button type="submit" id = "predict" class="btn btn-primary btn-block btn-large">Predict</button>
+<div id = "prediction"></div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -208,6 +185,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
+                    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="logic.js"></script>
 
     </body>
 
