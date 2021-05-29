@@ -10,7 +10,9 @@ reg = load("model")
 print(reg)
 scaler = load("scaler")
 
-
+@app.route('/')
+def home():
+    return render_template('index.html')
 # def predictTime(reg,??):
 #     srType = 
 #     ward = 
@@ -127,9 +129,11 @@ def predict():
     print(reg.predict(pd.DataFrame([datum]))[0])
     X = pd.DataFrame([datum])
     X_scaled = scaler.transform(X)
-    return jsonify(reg.predict(X_scaled)[0][0])
-    
+    inMinutes = jsonify(reg.predict(X_scaled)[0][0])
+    return render_template('index.html', prediction_text='Your projected turnaround time is: {}'.format(inMinutes))
 
+
+   
 # @app.route('/predict', methods=['GET','POST'])
 # def predict():
 #     if request.method == 'POST':
