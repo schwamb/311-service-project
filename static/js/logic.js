@@ -14,9 +14,10 @@ d3.select("#predict").on("click", function(){
     console.log(hour)
 
     var url = `./predict?srType=${srType}&ward=${ward}&month=${month}&hour=${hour}`
-    d3.json(url).then(function(data){
-        d3.select("#prediction").text(data)
-    })
+    location.href = url
+    // d3.json(url).then(function(data){
+    //     d3.select("#prediction").text(data)
+    // })
 })
 
 
