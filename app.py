@@ -1,10 +1,12 @@
 import numpy as np
 from flask import Flask, request, render_template, jsonify
+from flask_cors import CORS
 import csv
 from joblib import load
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)
 
 reg = load("model")
 print(reg)
@@ -13,14 +15,7 @@ scaler = load("scaler")
 @app.route('/')
 def home():
     return render_template('index.html')
-# def predictTime(reg,??):
-#     srType = 
-#     ward = 
-#     month = 
-#     time = 
-#     service_request = [[srType,ward,month,time]]
 
-#     return ??
 @app.route('/predict')
 def predict():
     srType = request.args.get("srType")
@@ -129,56 +124,11 @@ def predict():
     print(reg.predict(pd.DataFrame([datum]))[0])
     X = pd.DataFrame([datum])
     X_scaled = scaler.transform(X)
-    inMinutes = jsonify(reg.predict(X_scaled)[0][0])
-    return render_template('index.html', prediction_text='Your projected turnaround time is: {}'.format(inMinutes))
-
-
-   
-# @app.route('/predict', methods=['GET','POST'])
-# def predict():
-#     if request.method == 'POST':
-#         srType = int(request.form['selectSR'])
-#         ward = float(request.form['selectWard'])
-
-#         service_request = [[srType,ward]]
-#         prediction = reg.predict(service_request)
-#         print(prediction)
-#         return render_template("index.html")
-#     else:
-#         return render_template('index.html')
-            
-# @app.route('/test')
-# def Param1(param1):
-#     request.args.get("param1")
-#     request.args.get("param2")
-#     print(request.args)
-#     return request.args
-# def Param2(param2):
-#     request.args.get("param2")
-#     print(request.args)
-#     return request.args
-# def Param2(param3):
-#     request.args.get("param3")
-#     print(request.args)
-#     return request.args
-# def Param2(param4):
-#     request.args.get("param4")
-#     print(request.args)
-#     return request.args
-
-# @app.route('/predict',methods=['POST'])
-# def predict():
-
-#     int_features = [int(x) for x in request.form.values()]
-#     final_features = [np.array(int_features)]
-#     prediction = reg.predict(final_features)
-
-#     output = round(prediction[0], 2)
-
-#     return render_template('index.html', prediction_text='Turnaround time should be {} days'.format(output))
-
-
-
+    inDays = (reg.predict(X_scaled)[0][0])
+    print(inDays)
+    output = round(inDays, 2)
+    print(output)
+    return render_template('index.html', prediction_text='Your projected turnaround time is: {} days'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
