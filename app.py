@@ -12,7 +12,6 @@ from sqlalchemy import create_engine, func
 app = Flask(__name__)
 CORS(app)
 
-# engine = create_engine('postgresql://postgres:vfr4MKO)@localhost:49681/')
 engine = create_engine("sqlite:///db_311.sqlite")
 
 reg = load("model")
