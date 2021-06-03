@@ -1,12 +1,7 @@
-import numpy as np
 from flask import Flask, request, render_template, jsonify, Response
 from flask_cors import CORS
-import csv
 from joblib import load
 import pandas as pd
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
 app = Flask(__name__)
