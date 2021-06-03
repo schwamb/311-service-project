@@ -20,21 +20,9 @@ scaler = load("scaler")
 
 @app.route("/api/v1.0/311_data")
 def srvc_data(): 
-    # session = Session(engine)
+    sr_info = pd.read_sql('SELECT * FROM service_requests', engine)
 
-    """Return a list of all passenger names"""
-    # Query all passengers
-    # results = session.query(happiness_data.happy_id, happiness_data.year, happiness_data.country_id,    
-    #     happiness_data.happiness_score, happiness_data.gdp, happiness_data.life_expectancy, 
-    #     happiness_data.freedom_score, happiness_data.trust_score, happiness_data.generosity_score,
-    #         countries.country, countries.country_id, countries.region).filter(
-    #         happiness_data.country_id == countries.country_id
-    #     ).all()
-    service_df = pd.read_sql('SELECT * FROM data_311', engine)
-
-    # session.close()
-    return Response(service_df.to_json(orient = "records"),mimetype="application/json")
-
+    return Response(sr_info.to_json(orient = "records"),mimetype="application/json")
 
 @app.route('/')
 def home():
