@@ -16,7 +16,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html" id="logo"> 311 Response Prediction Site - Chicago, IL</a>
+            <a class="navbar-brand" href="" id="logo"> 311 Response Prediction Site - Chicago, IL</a>
         </nav>
 
             <div class="jumbotron">
@@ -102,7 +102,7 @@
                     <option value='Sign Repair Request - Stop Sign'>Sign Repair Request - Stop Sign</option>
                     <option value='Smokeless Tobacco at Sports Event Complaint'>Smokeless Tobacco at Sports Event Complaint</option>
                     <option value='Snow - Object/Dibs Removal Request'>Snow - Object/Dibs Removal Request</option>
-                    <option value='Snow â€“ Uncleared Sidewalk Complaint'>Snow â€“ Uncleared Sidewalk Complaint</option>
+                    <option value='Snow â€“ Uncleared Sidewalk Complaint'>Snow - Uncleared Sidewalk Complaint</option>
                     <option value='Snow Removal - Protected Bike Lane or Bridge Sidewalk'>Snow Removal - Protected Bike Lane or Bridge Sidewalk</option>
                     <option value='Stray Animal Complaint'>Stray Animal Complaint</option>
                     <option value='Street Cleaning Request'>Street Cleaning Request</option>
@@ -129,14 +129,19 @@
                     <option value='Yard Waste Pick-Up Request'>Yard Waste Pick-Up Request</option>
                     
                 </select>
+               
+
             </br>
             </br>
 
             <label for="meeting-time">Time of Request</label>
             <input type="datetime-local" id="meeting-time"
-                name="meeting-time" value="2018-06-12T19:30">
+                name="meeting-time" value="2021-06-05T10:30">
+                
             </br>
+
             </br>
+            
             <a href="https://www.chicago.gov/city/en/depts/mayor/iframe/lookup_ward_and_alderman.html" target="_blank" rel="noopener noreferrer">Click to lookup your ward!</a></span>
               </label>
             </br>
@@ -192,10 +197,13 @@
             <option value='49'>49</option>
             <option value='50'>50</option>
             </select>
+
             </br>   
             </br>
-
-            <button type="submit" id = "predict" class="btn btn-primary btn-block btn-large">Predict</button>
+            <button onclick="changeIt()" id = "predict" class="btn btn-primary btn-block btn-large">Predict</button>
+            <!-- <button type="submit" id = "predict" class="btn btn-primary btn-block btn-large">Predict</button>
+             -->
+             
             </br>
            </br>
 
@@ -206,7 +214,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well">
-                        <img src = "https://upload.wikimedia.org/wikipedia/commons/2/24/Map_of_the_Community_Areas_and_%27Sides%27_of_the_City_of_Chicago.svg" align="right"></img>
+                        <img src  = "https://archive.org/download/ward_map/ward_map.jpg"></img>
                     </div> 
                 </div>
             </div>
